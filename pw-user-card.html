@@ -6,8 +6,42 @@
       :host {
         display: block;
       }
+
+      .container {
+        font-family: "Roboto Condensed";
+        text-align: center;
+        padding: 10px;
+        -webkit-box-shadow: 4px 4px 10px 0px rgba(195,195,195,0.5);
+        -moz-box-shadow: 4px 4px 10px 0px rgba(195,195,195,0.5);
+        box-shadow: 4px 4px 10px 0px rgba(195,195,195,0.5);
+      }
+
+      .photo {
+        margin: auto 0;
+      }
+
+      .photoprofile {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+
+      .userdata p {
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+
+      .userdata p font {
+        font-weight: 700;
+      }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+    <div class="container">
+      <div class="photo"><img class="photoprofile" src="{{photosrc}}"></div>
+      <div class="userdata">
+       <p><font>Nombre:</font> {{username}}</p>
+       <p><font>Correo:</font> {{email}}</p>
+      </div>
+    </div>
   </template>
 
   <script>
@@ -23,9 +57,17 @@
       static get is() { return 'pw-user-card'; }
       static get properties() {
         return {
-          prop1: {
+          photosrc: {
             type: String,
-            value: 'pw-user-card'
+            value: 'https://www.grandparentsofmedialiteracy.com/sites/default/files/default_images/dummy-image_0.jpg'
+          },
+          username: {
+            type: String,
+            value: 'Nombre del Usuario'
+          },
+          email: {
+            type: String,
+            value: 'user@domain.com'
           }
         };
       }
