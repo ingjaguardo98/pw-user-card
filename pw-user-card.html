@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="pw-user-card">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `pw-user-card`
+     * Card that shows the user data coming from its authentication.
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class PwUserCard extends Polymer.Element {
+      static get is() { return 'pw-user-card'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'pw-user-card'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PwUserCard.is, PwUserCard);
+  </script>
+</dom-module>
