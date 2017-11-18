@@ -1,7 +1,7 @@
 {
   "name": "pw-user-card",
   "description": "Card that shows the user data coming from its authentication.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "pw-user-card.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.2.0"
@@ -12,6 +12,6 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.2"
   },
   "resolutions": {
-    "polymer": "^2.0.0"
+    "polymer": "^2.2.0"
   }
 }

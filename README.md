@@ -2,6 +2,12 @@
 
 Card that shows the user data coming from its authentication.
 
+## Properties
+
+photosrc - String - Url of profile photo
+username - String - User name
+email - String -  e-mail of user
+
 ## Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
