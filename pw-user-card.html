@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-input/paper-input.html">
 
 <dom-module id="pw-user-card">
   <template>
@@ -37,8 +38,9 @@
     <div class="container">
       <div class="photo"><img class="photoprofile" src="{{photosrc}}"></div>
       <div class="userdata">
-       <p><font>Nombre:</font> {{username}}</p>
-       <p><font>Correo:</font> {{email}}</p>
+        <p><font>Nombre:</font> {{username}}</p>
+        <p><font>Correo:</font> {{email}}</p>
+        <slot></slot>
       </div>
     </div>
   </template>
